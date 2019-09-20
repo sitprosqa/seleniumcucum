@@ -21,8 +21,10 @@
                 <version>3.8.0</version>
 				
 				<configuration>
-                <release>12</release>
-                <compilerArgs>--enable-preview</compilerArgs>
+					<release>12</release>
+					<compilerArgs>
+					<arg>--enable-preview</arg>
+					</compilerArgs>
 				</configuration>
 				
             </plugin>
@@ -30,6 +32,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
+				<configuration>
+				<argLine>--enable-preview</argLine>
+				</configuration>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
